@@ -320,6 +320,94 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@graph': [
+              {
+                '@type': 'LocalBusiness',
+                '@id': 'https://www.polerastralkastare.se#business',
+                name: 'Strålkastar Teknik AB',
+                description:
+                  'Professionell strålkastar-renovering och försäljning av renoveringskit.',
+                email: 'info@stralkastarteknik.se',
+                url: 'https://www.polerastralkastare.se',
+                priceRange: '499–995 kr',
+                areaServed: 'Sverige',
+                hasOfferCatalog: {
+                  '@type': 'OfferCatalog',
+                  name: 'Strålkastar-renovering',
+                  itemListElement: [
+                    {
+                      '@type': 'Offer',
+                      itemOffered: {
+                        '@type': 'Service',
+                        name: 'Professionell strålkastar-renovering',
+                        price: '995',
+                        priceCurrency: 'SEK',
+                        description:
+                          'Komplett renovering av bilstrålkastare med våtslipning, polering och UV-skyddande lack.',
+                      },
+                    },
+                    {
+                      '@type': 'Offer',
+                      itemOffered: {
+                        '@type': 'Product',
+                        name: 'Renoveringskit för strålkastare',
+                        price: '499',
+                        priceCurrency: 'SEK',
+                        description:
+                          'Komplett gör-det-själv-kit med sandpapper, plastpolish, UV-skydd och instruktioner.',
+                      },
+                    },
+                  ],
+                },
+              },
+              {
+                '@type': 'FAQPage',
+                '@id': 'https://www.polerastralkastare.se#faq',
+                mainEntity: [
+                  {
+                    '@type': 'Question',
+                    name: 'Hur länge håller en strålkastar-renovering?',
+                    acceptedAnswer: {
+                      '@type': 'Answer',
+                      text: 'Med vårt UV-skyddande lack håller renoveringen i 2–5 år. Hos oss ingår UV-skydd i alla renoveringar och kit.',
+                    },
+                  },
+                  {
+                    '@type': 'Question',
+                    name: 'Kan jag renovera själv med ert kit?',
+                    acceptedAnswer: {
+                      '@type': 'Answer',
+                      text: 'Ja, vårt kit är designat för gör-det-själv och innehåller allt du behöver samt tydliga instruktioner. Resultatet blir professionellt om du följer stegen.',
+                    },
+                  },
+                  {
+                    '@type': 'Question',
+                    name: 'Vad kostar det att ni renoverar mina strålkastare?',
+                    acceptedAnswer: {
+                      '@type': 'Answer',
+                      text: 'Priset är från 995 kr per strålkastare. Kontakta oss för en offert anpassad efter din bilmodell och strålkastarnas skick.',
+                    },
+                  },
+                  {
+                    '@type': 'Question',
+                    name: 'Hur vet jag om mina strålkastare behöver renoveras?',
+                    acceptedAnswer: {
+                      '@type': 'Answer',
+                      text: 'Om strålkastarna ser gula, grumliga eller matta ut, och om ljuset känns svagare när du kör i mörker – då är det dags att renovera.',
+                    },
+                  },
+                ],
+              },
+            ],
+          }),
+        }}
+      />
     </>
   )
 }

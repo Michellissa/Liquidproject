@@ -29,6 +29,16 @@ export default function ServicePage() {
         </div>
       </section>
 
+      <nav aria-label="Du är här:" className="bg-gray-100">
+        <div className="mx-auto max-w-7xl px-4 py-2 text-sm text-gray-500 sm:px-6 lg:px-8">
+          <ol className="flex flex-wrap items-center gap-1">
+            <li><Link href="/" className="underline hover:text-primary">Hem</Link></li>
+            <li aria-hidden="true">/</li>
+            <li className="text-gray-700" aria-current="page">Tjänster & produkter</li>
+          </ol>
+        </div>
+      </nav>
+
       <section id="tjanst" className="scroll-mt-20 py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="items-center gap-12 md:grid md:grid-cols-2">
@@ -249,6 +259,48 @@ export default function ServicePage() {
           </div>
         </div>
       </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@graph': [
+              {
+                '@type': 'BreadcrumbList',
+                itemListElement: [
+                  {
+                    '@type': 'ListItem',
+                    position: 1,
+                    name: 'Hem',
+                    item: 'https://www.polerastralkastare.se',
+                  },
+                  {
+                    '@type': 'ListItem',
+                    position: 2,
+                    name: 'Tjänster & produkter',
+                    item: 'https://www.polerastralkastare.se/guide',
+                  },
+                ],
+              },
+              {
+                '@type': 'Product',
+                name: 'Renoveringskit för strålkastare – gör det själv',
+                description:
+                  'Komplett renoveringskit med våtslippapper P400–P3000, plastpolish, UV-skyddande clear coat, polertrassa, skumrondell, maskeringstejp, mikrofiberduk och steg-för-steg instruktioner.',
+                image: 'https://www.polerastralkastare.se/images/stralkastare-fore-efter-polering-5.webp',
+                offers: {
+                  '@type': 'Offer',
+                  price: '499',
+                  priceCurrency: 'SEK',
+                  availability: 'https://schema.org/InStock',
+                  url: 'https://www.polerastralkastare.se/guide#produkter',
+                },
+              },
+            ],
+          }),
+        }}
+      />
     </>
   )
 }
