@@ -4,8 +4,8 @@ import Footer from '@/components/Footer'
 
 export const metadata = {
   title: {
-    default: 'Polera strålkastare – Bästa metoden 2026 | PoleraStralkastare.se',
-    template: '%s | PoleraStralkastare.se',
+    default: 'Polera strålkastare – Bästa metoden 2026 | Strålkastar Teknik AB',
+    template: '%s | Strålkastar Teknik AB',
   },
   description:
     'Lär dig polera och renovera bilstrålkastare professionellt. Steg-för-steg-guide, bästa produkterna och verktygen för att få bort matta strålkastare.',
@@ -14,7 +14,7 @@ export const metadata = {
     description:
       'Lär dig polera och renovera bilstrålkastare professionellt. Steg-för-steg-guide, bästa produkterna och verktygen.',
     url: 'https://www.polerastralkastare.se',
-    siteName: 'PoleraStralkastare.se',
+    siteName: 'Strålkastar Teknik AB',
     locale: 'sv_SE',
     type: 'website',
   },

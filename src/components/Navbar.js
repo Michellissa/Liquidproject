@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const links = [
   { href: '/', label: 'Hem' },
-  { href: '/guide', label: 'Guide' },
+  { href: '/guide', label: 'Tjänster & produkter' },
 ]
 
 export default function Navbar() {
@@ -15,7 +15,7 @@ export default function Navbar() {
     <header className="bg-white shadow-sm">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <Link href="/" className="text-xl font-bold text-primary">
-          PoleraStralkastare.se
+          Strålkastar Teknik AB
         </Link>
 
         <button

@@ -7,6 +7,7 @@ export default function SEOImage({
   height = 600,
   priority = false,
   className = '',
+  caption = '',
 }) {
   return (
     <figure className={`overflow-hidden rounded-lg ${className}`}>
@@ -16,9 +17,15 @@ export default function SEOImage({
         width={width}
         height={height}
         priority={priority}
+        loading={priority ? 'eager' : 'lazy'}
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         className="h-auto w-full object-cover"
       />
+      {caption && (
+        <figcaption className="mt-2 text-center text-sm text-gray-500">
+          {caption}
+        </figcaption>
+      )}
     </figure>
   )
 }

@@ -10,8 +10,8 @@ export default function Footer() {
           <div>
             <h3 className="mb-3 text-lg font-semibold">Om oss</h3>
             <p className="text-sm text-gray-300">
-              Vi hjälper bilägare att återställa sina strålkastare till nyskick med
-              beprövade metoder och professionella produkter.
+              <strong>Strålkastar Teknik AB</strong> – vi hjälper bilägare att återställa sina
+              strålkastare till nyskick med beprövade metoder och professionella produkter.
             </p>
           </div>
 
@@ -22,7 +22,7 @@ export default function Footer() {
                 <Link href="/" className="hover:text-white">Hem</Link>
               </li>
               <li>
-                <Link href="/guide" className="hover:text-white">Guide – Polera strålkastare steg för steg</Link>
+                <Link href="/guide" className="hover:text-white">Tjänster & produkter</Link>
               </li>
             </ul>
           </div>
@@ -30,13 +30,14 @@ export default function Footer() {
           <div>
             <h3 className="mb-3 text-lg font-semibold">Kontakt</h3>
             <p className="text-sm text-gray-300">
-              info@polerastralkastare.se
+              info@stralkastarteknik.se<br />
+              Strålkastar Teknik AB
             </p>
           </div>
         </div>
 
         <div className="mt-8 border-t border-gray-600 pt-6 text-center text-sm text-gray-400">
-          &copy; {currentYear} PoleraStralkastare.se. Alla rättigheter förbehållna.
+          &copy; {currentYear} Strålkastar Teknik AB. Alla rättigheter förbehållna.
         </div>
       </div>
     </footer>
